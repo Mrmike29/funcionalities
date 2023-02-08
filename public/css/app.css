@@ -1,0 +1,110 @@
+@font-face {
+    font-family: AllertaStencil;
+    src: url('../fonts/AllertaStencil-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.m-slider-container {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.m-slider-container .m-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.m-slider-container .m-slider .m-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.m-slider-container .m-slider .active {
+    opacity: 1;
+}
+
+.m-title-functionalitie {
+    font-size: 5em;
+    text-align: center;
+    font-family: AllertaStencil;
+}
+
+.m-mike {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-mike-linkedin {
+    display: flex;
+    align-items: end;
+    margin-left: 25px;
+    justify-content: center;
+}
+
+.m-mike-text {
+    font-size: 1.5em;
+    margin-right: 25px;
+    text-align: center;
+    font-family: AllertaStencil;
+}
+
+.m-arrows {
+    width: 100%;
+    bottom: 15px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+
+}
+
+.m-arrows li {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 15px;
+    border-radius: 50%;
+    border: 3px solid black;
+    /* box-shadow: 0px 20px 40px 0px rgb(0 0 0 / 50%) */
+}
+
+.m-arrows li:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    transform: rotate(45deg);
+}
+
+.m-arrows li:nth-child(2):before {
+    transform: rotate(225deg);
+}
+ 

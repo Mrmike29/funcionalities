@@ -1,0 +1,69 @@
+.m-request-api {
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.m-request-api .m-request-header {
+    height: 15%;
+    display: flex;
+    color: white;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    font-family: AllertaStencil;
+}
+
+.m-request-api .m-request-body {
+    height: 70%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: AllertaStencil;
+}
+
+#m-request-api-response {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.m-response-item {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-between;
+}
+
+.m-response-item:nth-child(1) {
+    font-size: 1.2em;
+    justify-content: center;
+}
+
+.m-response-item > a {
+    color: white;
+    text-decoration: none;
+}
+
+.m-request-footer {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-request-footer button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: black;
+    border-radius: 100%;
+}
+
+.m-request-footer button img {
+    filter: invert(1);
+}
