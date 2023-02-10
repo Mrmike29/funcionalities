@@ -41,9 +41,14 @@
 }
 
 .m-title-functionalitie {
+    height: 50%;
+    display: flex;
     font-size: 5em;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
     font-family: AllertaStencil;
+    justify-content: space-around;
 }
 
 .m-mike {

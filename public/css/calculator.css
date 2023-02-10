@@ -7,9 +7,10 @@
 }
 
 .m-calculator .m-header {
-    background-color: #000;
     height: 120px;
+    background-color: #000;
     border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid white;
 }
 .m-calculator .m-header .m-window {
     height: 15px;
@@ -26,7 +27,7 @@
     cursor:pointer;
  }
 .m-input {
-    color: #4a4a4a;
+    color: rgb(105, 105, 105);
     text-align: right;
     padding: 10px 30px;
     
@@ -37,7 +38,8 @@
 }
 
 .m-calculator .m-keys {
-    background: linear-gradient(135deg, #3a3a3a, #000000);
+    color: #ffffff;
+    background: black;
     height: 280px;
     border-radius: 0 0 10px 10px;
     font-size: 24px;
@@ -69,7 +71,6 @@
 
  .m-calculator .m-keys .m-row .m-symbol {
     width: 25%;
-    background-color: #ffffff;
     font-size: 34px;
     font-family: AllertaStencil;
  }
@@ -86,9 +87,6 @@
  }
 
  .m-calculator .m-keys .m-row .action {
-    /* background: linear-gradient(60deg, #0084ff, #00ffff); */
     background: #000;
     border-radius: 0 0 10px 0;
-    color: #ffffff;
-    /* box-shadow: 0 25px 60px -10px rgba(0, 174, 255, 0.5); */
  }

@@ -12,6 +12,7 @@
     <link href="<?= asset('/css/app.css') ?>" rel="stylesheet">
     <link href="<?= asset('/css/calculator.css') ?>" rel="stylesheet">
     <link href="<?= asset('/css/request-api.css') ?>" rel="stylesheet">
+    <link href="<?= asset('/css/own-api.css') ?>" rel="stylesheet">
   </head>
   <body>
     <section class="m-slider-container">
@@ -82,9 +83,7 @@
               <p>If You're Bored...</p>
             </div>
             <div class="m-request-body">
-              <div id="m-request-api-response">
-                
-              </div>
+              <div id="m_request_api_response"></div>
             </div>
             <div class="m-request-footer">
               <button onclick="getActivity()">
@@ -93,8 +92,44 @@
             </div>
           </div>
         </div>
-        <div class="m-slide"></div>
-        <div class="m-slide"></div>
+        <div class="m-slide">
+          <div class="m-title-functionalitie">
+            <p>Own API</p>
+            <div class="m-api-panel">
+              <div class="m-header-api-panel">
+                <p>Filter</p>
+              </div>
+              <div class="m-body-api-panel">
+                <div class="m-api-panel-item">
+                  <input type="text" class="m-filter-input" id="filter_name" placeholder="Name">
+                </div>
+                <div class="m-api-panel-item">
+                  <input type="text" class="m-filter-input" id="filter_breed" placeholder="Breed">
+                </div>
+              </div>
+              <div class="m-footer-api-panel">
+                <button onclick="filter()">
+                  <img src="<?= asset('/icons/check.png') ?>" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="m-own-api">
+            <div class="m-own-api-header">
+              <button class="m-own-api-tab" onclick="switchTab('json_response')">JSON Response</button>
+              <button class="m-own-api-tab" onclick="switchTab('web_preview')">Web Preview</button>
+            </div>
+            <div class="m-own-api-body">
+              <div id="json_response" class="m-tabs">
+                <div id="m_json_url"></div>
+                <pre id="m_json"></pre>
+              </div>
+              <div id="web_preview" class="m-tabs" style="display:none">
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="m-mike">
         <div class="m-mike-text">
@@ -115,5 +150,6 @@
     <script type="text/javascript" src="<?= asset('/js/app.js') ?>"></script>
     <script type="text/javascript" src="<?= asset('/js/calculator.js') ?>"></script>
     <script type="text/javascript" src="<?= asset('/js/request-api.js') ?>"></script>
+    <script type="text/javascript" src="<?= asset('/js/own-api.js') ?>"></script>
   </body>
 </html>
