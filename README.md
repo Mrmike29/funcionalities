@@ -9,13 +9,17 @@
 
 ## Installation
 
+```bash
 composer install
 php artisan migrate
 php artisan db:seed
+```
 
 ## Usage
 
+```bash
 php artisan serve
+```
 
 ## About Laravel
 
